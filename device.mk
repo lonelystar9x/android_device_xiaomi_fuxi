@@ -33,6 +33,7 @@ PRODUCT_PACKAGES += \
     FrameworkResOverlayFuxi \
     FuxiWifiRes \
     SystemUIOverlayFuxi \
+    SettingsProviderResfuxi \
     SettingsOverlayFuxi
 
 # Sensors
