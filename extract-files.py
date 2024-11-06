@@ -12,9 +12,8 @@ from extract_utils.fixups_blob import (
     blob_fixups_user_type,
 )
 from extract_utils.fixups_lib import (
-    lib_fixup_vendorcompat,
+    lib_fixups,
     lib_fixups_user_type,
-    libs_proto_3_9_1,
 )
 from extract_utils.main import (
     ExtractUtils,
@@ -30,7 +29,7 @@ namespace_imports = [
 ]
 
 lib_fixups: lib_fixups_user_type = {
-    libs_proto_3_9_1: lib_fixup_vendorcompat,
+    **lib_fixups,
 }
 
 sensor_simbol = b'_ZN13DisplayConfig10ClientImpl4InitENSt3__112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEPNS_14ConfigCallbackE\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
