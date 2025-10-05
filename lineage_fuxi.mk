@@ -43,4 +43,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     RisingChipset="Snapdragon® 8 Gen 2" \
     RisingMaintainer="™lonelystar™" \
 
-BUILD_FINGERPRINT := Xiaomi/fuxi/fuxi:15/AQ3A.240912.001/OS2.0.203.0.VMCCNXM:user/release-keys
+BUILD_FINGERPRINT := Xiaomi/fuxi/fuxi:15/AQ3A.240912.001/OS2.0.213.0.VMCCNXM:user/release-keys
