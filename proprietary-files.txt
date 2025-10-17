@@ -137,6 +137,7 @@ odm/firmware/cs35l41-dsp1-spk-cali.wmfw
 odm/firmware/cs35l41-dsp1-spk-prot.wmfw
 
 # Camera
+system_ext/lib64/vendor.xiaomi.hardware.campostproc@1.0.so:odm/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
 odm/bin/hw/vendor.qti.camera.provider-service_64
 odm/etc/camera/af_class_all.dlc
 odm/etc/camera/af_class_human.dlc
@@ -237,6 +238,13 @@ odm/etc/camera/portrait_segmentation_qat.dlc
 odm/etc/camera/preview_bokeh_params_mono.json
 odm/etc/camera/preview_bokeh_params_pro.json
 odm/etc/camera/preview_mdbokeh_params_pro.json
+odm/etc/camera/sky_segmentation_qat.dlc
+odm/etc/camera/snsc.bin
+odm/etc/camera/snsc_params.json
+odm/etc/camera/ultrazoom.bin
+odm/etc/camera/ultrazoom_ii.bin
+odm/etc/camera/video_stabilizer.xml
+odm/etc/camera/vidhance_calibration
 odm/etc/camera/xiaomi/dualbokehjpegsnapshot.json
 odm/etc/camera/xiaomi/dualbokehsnapshot.json
 odm/etc/camera/xiaomi/EcoCloudInfo.json
@@ -377,6 +385,7 @@ odm/lib64/libcom.xiaomi.metadatautils.so
 odm/lib64/libcom.xiaomi.pluginutils.so
 odm/lib64/libcommonchiutils.so
 odm/lib64/libdeflicker.so
+odm/lib64/libdeflickerNM.so
 odm/lib64/libdualcam_optical_zoom_control.so
 odm/lib64/libdualcam_video_optical_zoom.so
 odm/lib64/libellv.so
@@ -485,6 +494,7 @@ odm/lib64/vendor.xiaomi.hardware.bgservice@1.0-impl.so
 vendor/bin/hw/android.hardware.camera.provider@2.7-virtual-camera-service
 vendor/etc/init/android.hardware.camera.provider@2.7-virtual-camera-service.rc
 vendor/lib64/hw/android.hardware.camera.provider@2.7-impl-vcamera.so
+vendor/lib64/hw/vendor.xiaomi.hardware.quickcamera@1.0-impl.so
 vendor/lib64/camera/libPlatformValidatorShared.so;MODULE_SUFFIX=-camera
 vendor/lib64/libPlatformValidatorShared.so
 vendor/lib64/libQnnChrometraceProfilingReader.so
@@ -513,6 +523,7 @@ vendor/lib64/libcamxexternalformatutils.so
 vendor/lib64/libmicuttlefish_fs.so
 vendor/lib64/libmivsock_utils.so
 vendor/lib64/libos.so
+vendor/lib64/libquickcamera.so
 vendor/lib64/libqvr_cam_cdsp_driver_stub.so
 vendor/lib64/libqvr_cdsp_driver_stub.so
 vendor/lib64/libqvrcamera_client.qti.so
@@ -526,6 +537,7 @@ vendor/lib64/libsynx.so
 vendor/lib64/libthreadutils.so
 vendor/lib64/vendor.qti.hardware.qxr-V1-ndk.so
 vendor/lib64/vendor.xiaomi.hardware.bgservice@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.quickcamera@1.0.so
 
 # Camera Firmware
 odm/firmware/CAMERA_ICP.b00
@@ -663,6 +675,7 @@ odm/lib64/camera/plugins/com.xiaomi.plugin.arcsoftsll.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.capbokeh.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.capdepth.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.caphdr.so
+odm/lib64/camera/plugins/com.xiaomi.plugin.deflicker.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.depurple.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.frontbokeh.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.gpu.so
