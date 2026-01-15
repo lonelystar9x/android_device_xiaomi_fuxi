@@ -17,16 +17,29 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Camera
 $(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
 
+# QPGallery
+PRODUCT_PACKAGES += \
+     SPGallery
+
+# XperiaKeyboard
+PRODUCT_PACKAGES += \
+     XperiaKeyboard
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Rom flags
 TARGET_ENABLE_BLUR := true
 TARGET_EXCLUDES_AUDIOFX := true
-TARGET_HAS_UDFPS := true
+TARGET_CUSTOM_UDFPS := true
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_PREBUILT_BCR := false
+WITH_BCR := false
 TARGET_INCLUDE_ACCORD := false
 TARGET_DISABLE_EPPE := true
 WITH_GMS := true
-TARGET_USES_PICO_GAPPS := true
+TARGET_USES_CORE_GAPPS := true
+TARGET_OPTIMIZED_DEXOPT := true
 TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
 TARGET_DEFAULT_PIXEL_LAUNCHER := false
 
@@ -36,9 +49,5 @@ PRODUCT_NAME := lineage_fuxi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := 2211133C
 PRODUCT_MANUFACTURER := Xiaomi
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingChipset="Snapdragon® 8 Gen 2" \
-    RisingMaintainer="™lonelystar™"
 
 BUILD_FINGERPRINT := Xiaomi/fuxi/fuxi:15/AQ3A.240912.001/OS2.0.213.0.VMCCNXM:user/release-keys
